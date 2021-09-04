@@ -35,5 +35,30 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var n = new Date;
+      var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+      var months = ["January", "February", "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November", "December"];
+      var d = n.getDay() - 1;
+      var day = days[d];
+      var date = n.getDate();
+      console.log(date);
+      if (date == 1) {
+        var curdate = date + "st";
+      }
+      else if (date == 2) {
+        var curdate = date + "nd";
+      }
+      else if (date == 3) {
+        var curdate = date + "rd";
+      }
+      else {
+        var curdate = date + "th";
+      }
+      var m = n.getMonth();
+      var month = months[m];
+      document.getElementById("currentDay").innerHTML = day + ", " + month + " " + curdate;
+    </script>
   </body>
 </html>
