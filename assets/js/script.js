@@ -40,19 +40,14 @@ function validateHour() {
 }
 
 function saveStorage(name, description) {
-    intervalId = setInterval(countdown, 100);
+    showSaveMessage();
     localStorage.setItem(name, description);
 }
 
 //Create a timer Count down
-function countdown() {
+function showSaveMessage() {
     $("#saveMessage").show();
-    if (timeLeft > 0) {
-    timeLeft--;
-    }
-    if (timeLeft === 0) {
-    clearInterval(intervalId);
-    $("#saveMessage").hide();
-    timeLeft = 15;
-    }
+    setTimeout(function () {
+        $("#saveMessage").hide();
+    }, 2000);
 }
