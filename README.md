@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-![Mockup Screenshot](assets/images.Screenshot.png)
+Screenshot: assets.images.Screenshot.png
 
 ## Purpose
 
