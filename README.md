@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-Screenshot: assets.images.Screenshot.png
+https://github.com/gkowligi1392/work-day-scheduler/blob/main/assets/images/Screenshot.png?raw=true
 
 ## Purpose
 
