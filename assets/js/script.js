@@ -1,3 +1,8 @@
+let intervalId = 0;
+let timeLeft = 15;
+
+$("#saveMessage").hide();
+
 const currentDay = moment();
 $("#currentDay").html(currentDay.format("dddd, MMMM Do YYYY"));
 
@@ -8,7 +13,8 @@ $(".time-block").on("click", "button", function () {
     console.log(hour);
     const descriptionEl = "#description" + hour;
     const description = $(descriptionEl).val();
-    console.log("description:", description);
+    
+    saveStorage(hour, description);
 });
 
 function validateHour() {
@@ -17,6 +23,9 @@ function validateHour() {
     $(".form-control").each(function (index) {
         const hourTimeBlock = $(this).attr("aria-label");
         const dateTimeBlock = moment(hourTimeBlock, "ha");
+        const description = localStorage.getItem(hourTimeBlock);
+
+        $(this).val(description);
 
         if (!currentDay.isBefore(dateTimeBlock, "hour")) {
         if (currentDay.isSame(dateTimeBlock, "hour")) {
@@ -28,4 +37,22 @@ function validateHour() {
         $(this).addClass("future");
         }
     });
+}
+
+function saveStorage(name, description) {
+    intervalId = setInterval(countdown, 100);
+    localStorage.setItem(name, description);
+}
+
+//Create a timer Count down
+function countdown() {
+    $("#saveMessage").show();
+    if (timeLeft > 0) {
+    timeLeft--;
+    }
+    if (timeLeft === 0) {
+    clearInterval(intervalId);
+    $("#saveMessage").hide();
+    timeLeft = 15;
+    }
 }
