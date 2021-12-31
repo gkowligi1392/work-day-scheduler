@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -21,30 +23,94 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <div class="row time-block mb-1">
+    <div class="row time-block mt-4">
       <div class="input-group">
-        <span class="input-group-text hour">
-          9AM
-        </span>
-        <textarea id="text9" class="form-control description" aria-describedby="buttonAdd"></textarea>
-        <button class="btn btn-outline-secondary saveBtn" type="button" data-hour="9" id="buttonAdd">
-          Save
-        </button>
+        <span class="input-group-text hour">9AM</span>
+        <textarea id="description9AM"  class="form-control" aria-label="9AM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="9AM" type="button">
+            Save
+          </button>
       </div>
     </div>
     <div class="row time-block">
       <div class="input-group">
-        <span class="input-group-text hour">
-          10AM
-        </span>
-        <textarea id="text10" class="form-control description" aria-describedby="buttonAdd"></textarea>
-        <button class="btn btn-outline-secondary saveBtn" type="button" data-hour="10" id="buttonAdd">
-          Save
-        </button>
+        <span class="input-group-text hour">10AM</span>
+        <textarea id="description10AM"  class="form-control" aria-label="10AM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="10AM" type="button">
+            Save
+          </button>
       </div>
     </div>
-  </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">11AM</span>
+        <textarea id="description11AM"  class="form-control" aria-label="11AM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="11AM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">12PM</span>
+        <textarea id="description12PM"  class="form-control" aria-label="12PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="12PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">1PM</span>
+        <textarea id="description1PM"  class="form-control" aria-label="1PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="1PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">2PM</span>
+        <textarea id="description2PM"  class="form-control" aria-label="2PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="2PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">3PM</span>
+        <textarea id="description3PM"  class="form-control" aria-label="3PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="3PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">4PM</span>
+        <textarea id="description4PM"  class="form-control" aria-label="4PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="4PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group">
+        <span class="input-group-text hour">5PM</span>
+        <textarea id="description5PM"  class="form-control" aria-label="5PM"></textarea>
+          <button class="btn btn-outline-secondary saveBtn" data-hour="5PM" type="button">
+            Save
+          </button>
+      </div>
+    </div>
 
+
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>

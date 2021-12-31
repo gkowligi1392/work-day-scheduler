@@ -10,7 +10,7 @@ body {
     resize: none;
     color: #000000;
     border-left: 1px solid black;
-    padding: 10px;
+    padding: 0;
   }
   
   .jumbotron {
@@ -23,6 +23,7 @@ body {
   
   .description{
     white-space: pre-wrap;
+    padding: 0;
   }
   
   .time-block{
@@ -68,10 +69,10 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
-    height: 100%;
+    text-align: center;
   }
   
-  .saveBtn i:hover {
+  /*.saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
-  }
+  }*/
