@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-![Mockup Screenshot](assets/images/screenShot.png)
+![Mockup Screenshot](assets/images.Screenshot.png)
 
 ## Purpose
 
@@ -27,4 +27,4 @@ https://gkowligi1392.github.io/work-day-scheduler/
 
 ## Contribution
 
-Made with ❤️ by [Gokul Kowligi]
+Made with ❤️ by Gokul Kowligi
