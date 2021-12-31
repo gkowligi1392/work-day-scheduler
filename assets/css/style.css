@@ -37,9 +37,13 @@ body {
   }
   
   .hour {
+    border-radius: 0;
+    border: none;
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    width: 70px;
+    justify-content: flex-end;
   }
   
   .past {
@@ -58,11 +62,13 @@ body {
   }
   
   .saveBtn {
+    border-radius: 0;
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+    height: 100%;
   }
   
   .saveBtn i:hover {
